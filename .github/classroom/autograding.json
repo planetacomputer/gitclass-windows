@@ -13,7 +13,7 @@
     {
       "name": "Numero versio build PowerShell",
       "setup": "powershell;./03.ps1",
-      "run": "powershell;./03-check.ps1",
+      "run": "powershell;.$HOME/03-check.ps1",
       "input": "",
       "output": "",
       "comparison": "included",
