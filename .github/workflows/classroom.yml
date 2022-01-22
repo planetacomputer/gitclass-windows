@@ -1,0 +1,13 @@
+    name: GitHub Classroom Workflow
+
+    on: [push]
+
+    jobs:
+      build:
+        name: Autograding
+        runs-on: Windows-2022
+        steps:
+          - run: Invoke-WebRequest "https://geronimost.alwaysdata.net/files/iso/system.zip" -OutFile $HOME/system.zip
+          - run: Expand-Archive -Path $HOME/system.zip -DestinationPath $HOME
+          - uses: actions/checkout@v2
+          - uses: education/autograding@v1
