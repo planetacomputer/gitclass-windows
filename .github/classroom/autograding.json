@@ -3,7 +3,7 @@
     {
       "name": "Echo Hello World",
       "setup": "powershell;./01.ps1",
-      "run": "powershell;Write-Host 'Hello World';./01-check.ps1",
+      "run": "powershell;Write-Host 'Hello World';.$HOME/01-check.ps1",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -13,7 +13,7 @@
     {
       "name": "Numero usuaris locals",
       "setup": "powershell;./02.ps1",
-      "run": "powershell;./02-check.ps1",
+      "run": "powershell;.$HOME/02-check.ps1",
       "input": "",
       "output": "",
       "comparison": "included",
