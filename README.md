@@ -9,3 +9,4 @@
  - **07.ps1** Número de dies des del naixement de Nelson Mandela
  - **08.ps1** Retorna les lletres del string "supercalifragilisticoespialidoso" ordenades alfabéticament
  - **09.ps1** El fitxer usuarios.csv conté una taula amb usuaris i els seus corresponents passwords. Tot fent servir Import-Csv, llegeix aquest fitxer i itera'l per crear cada usuari amb el seu password.
+ - **10.ps1** La invocació a aquest programa genera un array de nom $array format per dos números naturals: el primer està format pel nombre de paràmetres passats, i el segon per un número natural que és la mitjana arrodonida dels números passats per paràmetre.
