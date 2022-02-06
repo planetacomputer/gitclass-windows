@@ -1,9 +1,19 @@
 {
   "tests": [
     {
+      "name": "Echo Hello World",
+      "setup": "powershell;./01.ps1",
+      "run": "powershell;Write-Host 'Hello World';./01-check.ps1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
       "name": "Numero usuaris locals",
       "setup": "powershell;./02.ps1",
-      "run": "powershell;.$HOME/02-check.ps1",
+      "run": "powershell;./02-check.ps1",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -13,12 +23,89 @@
     {
       "name": "Numero versio build PowerShell",
       "setup": "powershell;./03.ps1",
-      "run": "powershell;.$HOME/03-check.ps1",
+      "run": "powershell;./03-check.ps1",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
       "points": 1
     }
+    ,
+    {
+      "name": "Numero parell o senar",
+      "setup": "powershell;./04.ps1",
+      "run": "powershell;.$HOME/04-check.ps1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+    ,
+    {
+      "name": "Suma valors de hashtable",
+      "setup": "powershell;./05.ps1",
+      "run": "powershell;.$HOME/05-check.ps1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+    ,
+    {
+      "name": "Número de processos del sistema que comencen per la lletra w",
+      "setup": "powershell;./06.ps1",
+      "run": "powershell;./06-check.ps1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+    ,
+    {
+      "name": "Dies des del naixement de Nelson Mandela",
+      "setup": "powershell;./07.ps1",
+      "run": "powershell;./07-check.ps1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+    ,
+    {
+      "name": "Ordenacio de lletres",
+      "setup": "powershell;./08.ps1",
+      "run": "powershell;./08-check.ps1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+    ,
+    {
+      "name": "Creació d'usuaris a partir de CSV",
+      "setup": "powershell;./09.ps1",
+      "run": "powershell;./09-check.ps1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+    ,
+    {
+      "name": "Num params i mitjana",
+      "setup": "powershell;./10.ps1",
+      "run": "powershell;./10-check.ps1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    } 
   ]
 }
