@@ -12,11 +12,3 @@
 #Aberdeen : 209482
 
 #Retorna $pops i no escriguis res per pantalla en la versió final
-
-$pops =@{"Glasgow"=976970; "Edinburgh"=488610;"Aberdeen"=209460;"Dundee"=157690}
-$date = Get-Date
-foreach($key in $($pops.keys)){
-    $pops[$key] += $date.day
-}
-
-return $pops
